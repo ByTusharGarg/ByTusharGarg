@@ -7,8 +7,8 @@ I build complete products, from the UI and APIs through LLM integration to cloud
 - 🤖 **Now:** building agentic AI and **Model Context Protocol (MCP)** servers that let AI assistants act on real business systems
 - 🏢 **Work:** Full Stack Engineer (AI Applications) at Rapid Innovation: LLM features with OpenAI + LangChain in a Django HRMS, AI document extraction, and a crypto-backed lending platform
 - 🏥 **Before:** NHS (UK) healthcare platforms, a PTaaS security SaaS, and CTO at Phixman
-- 🎓 **Certified:** [Agentic AI, DeepLearning.AI](https://www.deeplearning.ai/certificates/74747d42-4873-418f-90fe-d57137cd9049) (Nov 2026)
-- 🌱 **Learning:** MCP in depth, then the Hugging Face AI agents course
+- 🎓 **Certified (Nov 2026):** [Agentic AI, DeepLearning.AI](https://www.deeplearning.ai/certificates/74747d42-4873-418f-90fe-d57137cd9049) · [Introduction to MCP, Claude Academy](https://academy.claude.com/verify/a11b0f8ad94def8838c78f1c8105a734) · [MCP: Advanced Topics, Claude Academy](https://academy.claude.com/verify/f240e53c3e8bcaa5e50668ecf000c311)
+- 🌱 **Learning:** LangGraph, while building an HR assistant agent (Claude + LangGraph) that uses horilla-mcp as its tools, with a confirmation step before any change
 
 ### 🚀 Featured project
 

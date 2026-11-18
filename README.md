@@ -8,19 +8,21 @@ I build complete products, from the UI and APIs through LLM integration to cloud
 - 🏢 **Work:** Full Stack Engineer (AI Applications) at Rapid Innovation: LLM features with OpenAI + LangChain in a Django HRMS, AI document extraction, and a crypto-backed lending platform
 - 🏥 **Before:** NHS (UK) healthcare platforms, a PTaaS security SaaS, and CTO at Phixman
 - 🎓 **Certified (Nov 2026):** [Agentic AI, DeepLearning.AI](https://www.deeplearning.ai/certificates/74747d42-4873-418f-90fe-d57137cd9049) · [Introduction to MCP, Claude Academy](https://academy.claude.com/verify/a11b0f8ad94def8838c78f1c8105a734) · [MCP: Advanced Topics, Claude Academy](https://academy.claude.com/verify/f240e53c3e8bcaa5e50668ecf000c311) · [AI Agents in LangGraph, DeepLearning.AI](https://www.deeplearning.ai/accomplishments/0a7d9238-0d0e-49cf-948c-0263733303aa)
-- 🌱 **Next:** persistence and horizontal scaling for the HR assistant (Postgres-backed conversations, stateless MCP over HTTP), then evals and tracing
+- 🌱 **Next:** evals and tracing for the HR assistant (groundedness of policy answers, correct tool choice, Langfuse), then a live deployment
 
 ### 🚀 Featured projects
 
 **[hr-assistant](https://github.com/ByTusharGarg/hr-assistant)**: an AI agent for employees and managers that answers HR policy questions from a handbook, with citations, and takes actions in Horilla through horilla-mcp.
 
-- LangGraph agent in a FastAPI backend, acting as an MCP client of horilla-mcp; Next.js chat UI with streaming replies
+- LangGraph agent in a FastAPI backend, acting as an MCP client of horilla-mcp
+- A Next.js web app and a React Native (Expo) mobile app that share the chat logic, with streaming replies, role-aware quick actions and a guided leave form
 - Users sign in with their Horilla accounts, and the agent acts with each user's own permissions
-- Every change (apply, approve or reject leave) pauses for Approve / Decline, enforced in code with a LangGraph interrupt
+- Every change (apply, approve or reject leave) appears as a slip to approve, enforced in code with a LangGraph interrupt, and is stamped once decided
+- Scales horizontally: sessions, conversations and pending approvals in PostgreSQL, horilla-mcp as a stateless service
 - Choose the model per message: Claude through the Anthropic SDK, or OpenAI, Gemini, Groq and others through aisuite
-- 55 offline tests across the agent, sign-in, model routing and the UI
+- 75+ offline tests across the agent, sign-in, shared state, model routing and the UI
 
-`Python` `LangGraph` `FastAPI` `Next.js` `MCP` `Claude API` `aisuite`
+`Python` `LangGraph` `FastAPI` `Next.js` `React Native` `MCP` `PostgreSQL` `Claude API` `aisuite`
 
 **[horilla-mcp](https://github.com/ByTusharGarg/horilla-mcp)**: an MCP server that gives Claude and other AI assistants 14 tools over [Horilla](https://github.com/horilla-opensource/horilla), an open-source HRMS.
 
